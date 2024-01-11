@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title><%= title %></title>
+  </head>
+  <body class="text-orange-800">
+    <div>
+      <ul class="flex flex-row flex-wrap gap-4 font-bold">
+        <% for(var i = 0;i<10;i++) {%>
+        <li
+          class="cursor-pointer border-black border-4 w-max rounded-xl bg-red-400 hover:bg-red-600"
+        >
+          <img
+            class="float-left mr-4 rounded-l-md"
+            src="https://random.imagecdn.app/200/200"
+            alt=""
+          />
+          <h1 class="text-5xl text-gray-600">title of card</h1>
+          <p class="text-white">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Repellendus, similique?
+          </p>
+        </li>
+        <% } %>
+      </ul>
+    </div>
+  </body>
+</html>
